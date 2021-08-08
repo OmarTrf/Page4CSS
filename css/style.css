@@ -1,0 +1,466 @@
+/*font-family: 'Akaya Telivigala', cursive;*/
+/*font-family: 'RocknRoll One', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: linear-gradient(to right, #000 , #333);
+}
+.clear{
+	clear: both;
+}
+.container{
+	position: relative;
+	max-width: 100%;
+	padding: 10px;
+	margin: 20px 30px;
+}
+.logo{
+	color: #fff;
+	font-size: 35px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+	font-family: 'Akaya Telivigala', cursive;
+}
+.logo span{
+	color: #F4D03F;
+}
+.menu{
+	float: right;
+}
+.menu ul{
+	display: flex;
+}
+.menu ul li{
+	list-style: none;
+}
+.menu ul li a{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Akaya Telivigala', cursive;
+	color: #fff;
+	font-weight: bold;
+	transition: all .5s ease;
+}
+.active,.menu ul li a:hover{
+	color: #F4D03F !important;
+	border-bottom: 2px solid #F4D03F;
+}
+/*BarMenu*/
+.icon{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-size: 32px;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+	z-index: 1000;
+}
+/*Content*/
+.content{
+	position: relative;
+	max-width: 100%;
+	margin: 90px 30px 30px;
+}
+.person{
+	position: absolute;
+	top: 0;
+	left: 62%;
+	height: 470px;
+	width: auto;
+}
+.person img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.signature{
+	position: absolute;
+	right: 3%;
+	top: 85%;
+}
+.text{
+	position: relative;
+	top: -50px;
+	left: 0;
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	height: 400px;
+}
+.text h1{
+	font-weight: 800;
+	color: #fff;
+	font-family: 'RocknRoll One', sans-serif;
+}
+.text p{
+	font-size: 16px;
+	font-style: italic;
+	font-family: sans-serif;
+	font-weight: 200;
+	line-height: 20px;
+	letter-spacing: 1px;
+	color: rgba(188,188,188,1);
+	margin: 20px auto;
+}
+input[type=button]{
+	
+	font-size: 13px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	outline: none;
+	border-radius: 20px;
+	font-family: 'Akaya Telivigala', cursive;
+	transition: all ease .5s;
+	cursor: pointer;
+	background: #F4D03F;
+	color: #222;
+	border:3px solid #fff;
+}
+input[type=button]:hover,
+section .about-text a:hover{
+	border:1px solid #fff;
+    background: transparent;
+	color: #ddd;
+}
+input[type=button]:active,
+section .about-text a:active{
+	transform: scale(.95);
+}
+.social{
+	position: absolute;
+	bottom: 40px;
+	left: 20px;
+}
+.social ul li{
+	list-style: none;
+}
+.social ul li a{
+	text-decoration: none;
+	color: #ddd;
+}
+.social i{
+	margin:5px auto;
+}
+.social i:hover{
+	color: #F4D03F;
+	transform: scale(1.25);
+}
+
+/*About*/
+section{
+	width: 90%;
+	margin: auto;
+	border-top: 5px solid rgba(255,255,255,.6);
+	box-shadow: -6px -8px 2px 0px rgba(255, 255, 255, .05);
+	height: 500px;
+	background: #F4D03F;
+	position: relative;
+	top: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 40px 40px 0 0;
+	padding: 20px;
+}
+section h1,
+.contact h1,
+.product h1{
+	display: block;
+	font-size: 40px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	color:#696A62;
+	font-family: 'RocknRoll One', sans-serif;
+	text-decoration: underline;
+	z-index: 1000;
+}
+section img{
+	width: 35%;
+}
+section .about-text{
+	width: 60%;
+}
+section .about-text h2{
+	color: #ddd;
+	font-size: 30px;
+	margin: 15px auto;
+	font-weight: bold;
+	text-align: center;
+}
+section .about-text p{
+	width: 70%;
+	margin: auto;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	color: #fff;		
+}
+section .about-text a,
+.card .content a{
+	text-decoration: none;
+	font-size:18px;
+	position: absolute;
+	bottom: 20px;
+	left: 70%;
+	transform: translateX(-70%);
+	font-weight: bold;
+	padding: 8px 30px;
+	text-transform: uppercase;
+	outline: none;
+	border-radius: 20px;
+	font-family: 'Akaya Telivigala', cursive;
+	transition: all ease .5s;
+	cursor: pointer;
+	background: #F4D03F;
+	color: #222;
+	border:3px solid #fff;
+}
+
+/*Product*/
+		.product{
+		    position: relative;
+			margin-top: 100px;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #314e52;
+			width: 100%;
+		}
+        .card{
+			position: relative;
+			width: 400px;
+			height: 600px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 20px auto;
+		}
+		.card .content{
+			width:90%;
+			padding:  0;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.card .content p{
+			color: #fff;
+			left: 0;
+			top: 0;
+			letter-spacing: 1px;
+		}
+		.card .content a{
+			display: inline-block;
+			margin: 10px 0;
+			padding: 10px 20px;
+			text-decoration: none;
+			color: #111;
+			border:2px solid #fff;
+			border-radius: 15px;
+            width:150px;
+            bottom: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+		}
+		.card .sliderImg{
+			position: relative;
+			width: 100%;
+			height: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 0 0 10px 10px;
+			box-shadow: 1px 5px 0px 0px rgba(0, 255, 255, .2);
+			background-size: cover;
+		}
+		.swiper-slide .card{
+             width: 100%;
+		}
+		.swiper-slide:nth-child(1) .sliderImg{
+			background-image: url("../img/product1.png");
+		}
+		.swiper-slide:nth-child(2) .sliderImg{
+			background-image: url("../img/product2.png");
+		}
+		.swiper-slide:nth-child(3) .sliderImg{
+			background-image: url("../img/product3.png");
+		}
+		.swiper-slide:nth-child(4) .sliderImg{
+			background-image: url("../img/product4.png");
+		}
+		.swiper-wrapper{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width:40% !important;
+		}
+		.swiper-pagination{
+			width: 150px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			border:2px solid #555;
+			border-radius: 15px;
+			padding: 0 20px;
+		}
+/*MediaQuery*/
+@media (max-width: 992px){
+  .icon{
+  	display: block;
+  	position: fixed;
+  }
+  nav .menu ul{
+  	position: fixed;
+  	width: 100%;
+  	height: 90vh;
+  	background: #2f3640;
+  	top: 17%;
+  	left: -100%;
+  	text-align: center;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+  	transition: all .5s ease;
+  	z-index: 2000;
+  }
+   nav .menu ul li{
+   	display: block;
+   	margin: 15px 0;
+   	line-height: 30px;
+   	color: red;
+   	width: 100%;
+   }
+   nav .menu ul li a{
+   	font-size: 30px;
+   	letter-spacing: 1.2px;
+   }
+    nav .menu ul li a:hover,
+    nav .menu ul li a.active{
+     	border: none;
+     	color: #F4D03F;
+     }
+    nav .menu ul.show{
+    	width: 100%;
+    	height: 100vh;
+    	position: fixed;
+    	left: -100%;
+    	background-image: linear-gradient(to right, #000 , #333);
+    	z-index: 5000;
+    }
+  .person{
+  	left: 65%;
+  	top: -10px;
+  }
+  .person img{
+  	height: 110%;
+  	width: 90%;
+  }
+  .signature{
+	top: 95%;
+}
+  .text p{
+  	margin: 45px auto;
+  }
+  .text input{
+  	position: absolute;
+  	top: 80%;
+  }
+  .social{
+  	top: 80%;
+  }
+
+}
+@media (max-width: 600px) {
+ .content{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ }
+ .content .person{
+ 	display: block;
+ 	position: absolute;
+ 	top: -20px;
+ 	left: 5%;
+ 	clear: both;
+ }
+/* .content .text{
+ 	display: block;
+ 	position: absolute;
+ 	top: 200%;
+ 	background: red;
+ }*/
+ .text{
+	position: relative;
+	top: 450px;
+	left: 0;
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	
+}
+.social{
+	position: absolute;
+	top: 600px;
+	left: 20px;
+}
+section{
+	top: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+	padding: 20px auto;
+}
+section h1,
+.product h1{
+	font-size: 25px;
+}
+section img{
+	width: 100%;
+	margin : 20px auto;
+}
+section .about-text{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+section .about-text p{
+	margin-bottom: 6.5rem;
+}
+section .about-text a{
+	display: block;
+	font-size: 18px;
+	width: 180px;
+	margin: 20px auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+}

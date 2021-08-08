@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcomme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<!-- FontGoogle -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">  
+	<!-- End FontGoogle -->
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+</head>
+<body>
+  <div class="container">
+  	<nav>
+  		<a href="#" class="logo"><span>My</span>Logo</a>
+  		<div class="menu" onclick="togglemenu()">
+  			<ul>
+  				<li><a href="#" class="active">Home</a></li>
+  				<li><a href="#">About</a></li>
+  				<li><a href="#">Portfolio</a></li>
+  				<li><a href="#">Contact</a></li>
+  			</ul>
+  			  <div class="icon">
+    				<i class="fas fa-bars"></i>
+    		  </div>
+  		</div>
+  		
+  	
+  	<div class="clear"></div>
+  </div>
+</nav>
+  <div class="content">
+  	<div class="person">
+  		<a href="#"><img src="img/men.png"></a>
+  	</div>
+  	<div class="text">
+  		<h1>It's New Black Design For Webing</h1>
+  		<p>Hello ! Im Flan Black Design Your WebSite</p>
+  	    <input type="button" name="" value="See More">
+  	</div>
+  </div>
+  <div class="social">
+  	<ul>
+  	<li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+  	<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+  	<li><a href="#"><i class="far fa-envelope fa-2x"></i></a></li>
+  	<li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div id="signature">
+  	<a href="#" class="signature"><img src="img/signature3.png"></a>
+  </div>
+</div>
+<!-- About -->
+<section>
+	<h1>About</h1>
+	<img src="img/about.png">
+	<div class="about-text">
+		<h2>Hi im Omar</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+		<a href="">About More</a>
+	</div>
+</section>
+<!-- Our Product -->
+<div class="product">
+	<h1>Some Product</h1>
+	 <div class="swiper-container">
+ 	<div class="swiper-wrapper">
+ 		<div class="swiper-slide">
+		  <div class="card">
+		  	<div class="sliderImg">
+		  	</div>
+		  	<div class="content">
+		  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+		  		<a href="#">Read More</a>
+		  	</div>
+		  </div>
+		</div>
+
+		<div class="swiper-slide">
+		  <div class="card">
+		  	<div class="sliderImg">
+		  	</div>
+		  	<div class="content">
+		  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+		  		<a href="#">Read More</a>
+		  	</div>
+		  </div>
+		</div>
+
+		<div class="swiper-slide">
+		  <div class="card">
+		  	<div class="sliderImg">
+		  	</div>
+		  	<div class="content">
+		  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+		  		<a href="#">Read More</a>
+		  	</div>
+		  </div>
+		</div>
+
+		<div class="swiper-slide">
+		  <div class="card">
+		  	<div class="sliderImg">
+		  	</div>
+		  	<div class="content">
+		  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+		  		<a href="#">Read More</a>
+		  	</div>
+		  </div>
+		</div>
+	</div>
+</div>
+ <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+	  <script type="text/javascript" src="swiper.min.js">
+	  </script>
+	  <script type="text/javascript">
+	  	  	var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 'auto',
+	      spaceBetween:10,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true
+	      },
+          autoplay:{
+          	delay : 2000,
+          }
+	    });
+	  	function togglemenu(){
+	  		document.getElementByClass("menu").classList.toggle("show")
+	  	}
+	  </script>
+</body>
+</html>
+<!-- 16:26 -->
